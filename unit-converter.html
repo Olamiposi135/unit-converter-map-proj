@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unit-converter.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="header-section">
+      <nav>
+        <div class="logo-title">
+          <img
+            src="images/page-logo.png"
+            alt="Unit Converter"
+            class="logo-image"
+          />
+
+          <h1>
+            i<span style="color: rgb(122, 198, 8)">Converters</span
+            ><span style="font-size: 1.5rem">.net</span>
+          </h1>
+        </div>
+        <ul class="header-li">
+          <li>Contact Us</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </section>
+    <div class="sub-nav">
+      <div>
+        <ul class="nav-list">
+          <li><a id="lengthconv" href="">Length Converter</a></li>
+          <li>
+            <a id="tempconv" href="">Temperature Converter</a>
+          </li>
+          <li><a href="weather-app.html">Weather App</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="hero-section">
+      <h1>Online Unit Converter</h1>
+      <h3>
+        Effortlessly convert units, currencies, and more with our
+        <a href="">iConverter Website</a>
+      </h3>
+      <h3>
+        comprehensive range of simple to use conversion calculators! Here are
+        just a few, make sure you check our all the others we have to offer!
+      </h3>
+    </section>
+
+    <section class="converter-section">
+      <h2 class="convert-header">Length Converter</h2>
+      <div id="show-result"></div>
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="length">Length:</label>
+          <input type="number" id="length" required placeholder="Enter value" />
+        </div>
+
+        <div class="form-group">
+          <label for="from">From:</label>
+          <select id="from" required>
+            <option value="km">Kilometers (km)</option>
+            <option value="miles">Miles</option>
+            <option value="ft">Feet (ft)</option>
+            <option value="m">Meter (m)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="to">To:</label>
+          <select id="to" required>
+            <option value="km">Kilometers (km)</option>
+            <option value="miles">Miles</option>
+            <option value="ft">Feet (ft)</option>
+            <option value="m">Meter</option>
+          </select>
+        </div>
+        <p class="equal-sign">=</p>
+        <input type="text" id="result-space" readonly />
+        <div class="button-contain">
+          <button type="submit" id="convert">
+            Convert Units <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="temperature-section">
+      <h2 class="convert-header">Temperature Converter</h2>
+      <div id="display-result"></div>
+      <form id="temperature-form">
+        <div class="form-group">
+          <label for="temperature">Temperature:</label>
+          <input
+            type="number"
+            id="temperature"
+            required
+            placeholder="Enter value"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="tempfrom">From:</label>
+          <select id="from-temp" required>
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tempto">To:</label>
+          <select id="to-temp" required>
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+          </select>
+        </div>
+
+        <p class="equal-sign">=</p>
+        <input type="text" id="temp-result-space" readonly />
+
+        <div class="button-contain">
+          <button type="submit" id="convert-temp">
+            Convert Temperature <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="feature-section">
+      <div>
+        <h1>WHAT WE BELIEVE IN</h1>
+        <p>
+          What is a Unit of Measurement? Put simply, a unit of measurement is a
+          quantity that has been defined. Sometimes this is defined by historic
+          tradition and other times by law. Quantities of the unit are then
+          expressed as a multiple of it.Throughout human history, we have
+          developed and used a number of different unit systems in regions and
+          cultures all across the globe. There is now a global standard of unit
+          <span style="text-decoration: underline">Conversion Calculator</span>
+          measurement, called the International System of Units (SI). This is a
+          modern form of the metric system. SI is still not fully adopted and
+          some parts of the world use other systems of measurement.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-us">
+        <div>
+          <h3>ABOUT</h3>
+          <h1>Who we are</h1>
+          <p>
+            We've all run across this problem, whether it's with cooking
+            recipies, physics equations or simple correspondence from a friend
+            from half around the globe - different unit standards make
+            successful communication tricky, and can sometimes lead to hilarious
+            and/or dangerous errors.No more!
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+        <div>
+          <h3>TEAM</h3>
+          <h1>What we do</h1>
+          <p>
+            We've decided to put together a single website that can help you
+            with converting whatever you want converted into units you
+            understand. From the common feet to meters and gallons to liters, to
+            more sophisticated measurement units like shoe and clothes sizes, we
+            have it all here in one place. Bookmark our site - you'll be coming
+            back!Examples of online tools on site:Measurement conversion mass
+            and weight, distance and length, capacity and volume, temperature,
+            and many more physical quantities. Pythagorean theorem, geometrical
+            figures - equations and calculators of surface area or perimeter,
+            geometrical 3D shapes equations and calculators of volume or surface
+            area
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-div">
+        <div class="footer-logo">
+          <div class="logo-title">
+            <img
+              src="images/page-logo.png"
+              alt="Unit Converter"
+              class="logo-image"
+              style="width: 50px; height: 50px"
+            />
+
+            <h1 style="font-size: 1.7rem">
+              i<span style="color: rgb(122, 198, 8); font-size: 2rem"
+                >Converters</span
+              ><span style="font-size: 1.1rem">.net</span>
+            </h1>
+          </div>
+          <div class="footer-media">
+            <p>iConverters.net is the best Weather Forecast app among all</p>
+            <ul>
+              <li>
+                <i class="fa-brands fa-square-facebook"></i>
+              </li>
+              <li><i class="fa-brands fa-square-instagram"></i></li>
+              <li><i class="fa-brands fa-square-x-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-square-github"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3>Weather</h3>
+            <ul class="footer-link">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h3>Resources</h3>
+            <ul class="footer-link">
+              <li><a href="#">Weather API</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Developer Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h3>Legal</h3>
+            <ul class="footer-link">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 iConverters.net. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="unit-converter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-section {
+  width: 100%;
+  padding: 1rem 0;
+
+  background: #1e293b;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-section nav {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.logo-title img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.logo-title img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.logo-title h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header-li {
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.header-li li {
+  cursor: pointer;
+}
+
+.header-li li:hover {
+  color: rgb(20, 223, 20);
+}
+
+.sub-nav {
+  background: #29364d;
+  padding: 1rem;
+  position: sticky;
+  top: 100px;
+  z-index: 900;
+}
+
+.sub-nav div {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li a {
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+
+.nav-list li a:hover {
+  background-color: rgb(45, 45, 66);
+}
+
+.nav-list li a:active {
+  color: blue;
+}
+
+.hero-section {
+  background-color: transparent;
+}
+
+.hero-section div {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: "cinzel", serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.highlight::after {
+  color: rgb(239, 236, 236);
+  content: "Anywhere, Anytime";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #007bff;
+  animation: typing 15s steps(20, end) infinite;
+  font-family: "roboto", arial;
+  width: 0;
+  max-width: fit-content;
+  transition: ease-in-out;
+  background-color: #1f2146;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.sub-heading {
+  font-family: "roboto", arial;
+  font-weight: 600;
+  color: rgb(247, 240, 232);
+}
+
+.weather-logo {
+  display: flex;
+  max-width: 400px;
+  color: white;
+
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+  gap: 16px;
+  transition: 0.5s;
+}
+
+.weather-logo:hover {
+  transform: scale(1.06);
+}
+
+.weather-logo div {
+  flex: 1;
+}
+
+.weather-logo h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.weather-img img {
+  width: 100%;
+  filter: opacity(0.8);
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(249, 211, 211, 0.6);
+}
+
+.weather-section {
+  padding: 2rem;
+  min-height: 70vh;
+  background-image: linear-gradient(rgba(3, 10, 36, 0.8), rgba(3, 10, 36, 0.8)),
+    url("images/weather-page-bg.jpg!w700wp");
+  background-size: cover;
+  background-position: center;
+}
+
+.weather-container {
+  width: 90%;
+  max-width: 600px;
+
+  margin: 5rem auto;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgb(245, 237, 237);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+.weather-container:hover {
+  transform: translateY(-5px);
+}
+
+.app-header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #08421c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header-para {
+  font-family: monospace;
+  font-size: 16px;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.input-div {
+  position: relative;
+}
+
+.input-search {
+  position: absolute;
+  right: 7px;
+  top: 14px;
+}
+
+.fa-magnifying-glass {
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #74ebd5;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.button-contain {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  color: white;
+  background: #3498db;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#weatherResult {
+  margin-top: 25px;
+  text-align: left;
+  color: #444;
+}
+
+#weatherResult h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #2196f3;
+}
+
+#weatherResult p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.feature-section {
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+}
+
+.feature-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 3rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-div {
+  display: flex;
+}
+
+.footer-logo {
+  padding: 0 2rem;
+}
+
+.footer-media {
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.footer-media p {
+  color: gainsboro;
+}
+
+.footer-media ul {
+  margin-top: 1rem;
+  width: 80%;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-media ul li {
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.footer-media ul li:hover {
+  transform: translateY(-5px);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+}
+
+.footer-content {
+  padding: 0 1rem;
+}
+
+.footer-content h3 {
+  color: #f8fafc;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-link a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link a:hover {
+  color: #f8fafc;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}

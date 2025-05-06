@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="weather-app.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header-section">
+      <nav>
+        <div class="logo-title">
+          <img
+            src="images/page-logo.png"
+            alt="Unit Converter"
+            class="logo-image"
+          />
+
+          <h1>
+            i<span style="color: rgb(122, 198, 8)">Converters</span
+            ><span style="font-size: 1.5rem">.net</span>
+          </h1>
+        </div>
+        <ul class="header-li">
+          <li>Contact Us</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </section>
+    <div class="sub-nav">
+      <div>
+        <ul class="nav-list">
+          <li>
+            <a id="lengthconv" href="unit-converter.html">Length Converter</a>
+          </li>
+          <li>
+            <a id="tempconv" href="unit-converter.html"
+              >Temperature Converter</a
+            >
+          </li>
+          <li><a href="weather-app.html">Weather App</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="weather-section">
+      <section class="hero-section">
+        <div>
+          <h1>
+            "Stay Ahead of the Weather<br /><span class="highlight"></span>"
+          </h1>
+          <h2 class="sub-heading">
+            Get real-time weather updates, 7-day forecasts, and local climate
+            alerts—right at your fingertips.
+          </h2>
+        </div>
+      </section>
+
+      <div class="weather-logo">
+        <div class="weather-img">
+          <img src="images/weather-cloud-logo.avif" alt="" />
+        </div>
+        <div>
+          <h1>
+            Weather <br />
+            Report
+          </h1>
+        </div>
+      </div>
+      <div class="weather-container">
+        <h2 class="app-header">Weather App</h2>
+        <p class="header-para">
+          Use real city names as examples (e.g., "Check the weather in Nairobi,
+          London, or Lagos.")
+        </p>
+        <div class="input-div">
+          <input
+            type="text"
+            id="cityInput"
+            placeholder="Search your Address, City or Zip Code"
+          />
+          <div class="input-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="button-contain">
+          <button id="get-weather" onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weatherResult"></div>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <h1 class="feature-title">Why Use Our Weather App?</h1>
+
+      <div class="features-container">
+        <div class="feature-card">
+          <h3>Stay Ahead of the Weather—Anywhere, Anytime</h3>
+          <p>Real-time updates and precise forecasts at your fingertips.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Extended Forecast</h3>
+          <p>
+            Make confident plans with our detailed 7-day weather predictions.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Weather Alerts</h3>
+          <p>
+            Stay safe with instant notifications for severe weather conditions.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Worldwide Weather</h3>
+          <p>Access accurate weather data from any location globally.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>User-Friendly Design</h3>
+          <p>
+            Experience weather updates through our intuitive, responsive
+            interface.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-div">
+        <div class="footer-logo">
+          <div class="logo-title">
+            <img
+              src="images/page-logo.png"
+              alt="Unit Converter"
+              class="logo-image"
+              style="width: 50px; height: 50px"
+            />
+
+            <h1 style="font-size: 1.7rem">
+              i<span style="color: rgb(122, 198, 8); font-size: 2rem"
+                >Converters</span
+              ><span style="font-size: 1.1rem">.net</span>
+            </h1>
+          </div>
+          <div class="footer-media">
+            <p>iConverters.net is the best Weather Forecast app among all</p>
+            <ul>
+              <li>
+                <i class="fa-brands fa-square-facebook"></i>
+              </li>
+              <li><i class="fa-brands fa-square-instagram"></i></li>
+              <li><i class="fa-brands fa-square-x-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-square-github"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3>Weather</h3>
+            <ul class="footer-link">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h3>Resources</h3>
+            <ul class="footer-link">
+              <li><a href="#">Weather API</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Developer Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h3>Legal</h3>
+            <ul class="footer-link">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 iConverters.net. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="unit-converter.js"></script>
+  </body>
+</html>
