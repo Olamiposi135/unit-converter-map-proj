@@ -39,6 +39,10 @@
   .form-group {
     margin-bottom: 0.8rem;
   }
+
+  .about-us {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -60,6 +64,8 @@
     gap: 3rem;
   }
 }
+
+/* Weather page */
 
 @media (max-width: 768px) {
   .features-title {

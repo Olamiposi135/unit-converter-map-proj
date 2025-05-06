@@ -11,7 +11,9 @@ body {
   flex-direction: column;
   /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
 
-  background: linear-gradient(rgba(15, 50, 146, 0.9), rgba(61, 60, 65, 0.9));
+  /* background: linear-gradient(rgba(15, 50, 146, 0.9), rgba(61, 60, 65, 0.9)); */
+
+  background: linear-gradient(to right, rgb(45, 7, 7), rgb(31, 31, 63));
 }
 
 .header-section {
