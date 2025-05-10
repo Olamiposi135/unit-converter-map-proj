@@ -9,11 +9,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
 
-  /* background: linear-gradient(rgba(15, 50, 146, 0.9), rgba(61, 60, 65, 0.9)); */
-
-  background: linear-gradient(to right, rgb(45, 7, 7), rgb(31, 31, 63));
+  background: linear-gradient(
+    to bottom,
+    rgb(83, 14, 14),
+    rgb(62, 62, 213),
+    rgb(52, 45, 102)
+  );
 }
 
 .header-section {
@@ -97,6 +99,7 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .nav-list li a {
@@ -106,6 +109,7 @@ body {
   text-decoration: none;
   transition: 0.5s ease;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .nav-list li a:hover {
