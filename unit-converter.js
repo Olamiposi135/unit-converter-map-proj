@@ -1,3 +1,12 @@
+function showMenu() {
+  var navLinks = document.getElementById("header-list");
+  navLinks.style.display = "block";
+}
+function hideMenu() {
+  var navLinks = document.getElementById("header-list");
+  navLinks.style.display = "none";
+}
+
 function resultDisplay() {
   const fullResult = document.querySelector("#show-result").innerHTML;
 

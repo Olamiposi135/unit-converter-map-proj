@@ -66,6 +66,33 @@ body {
   cursor: pointer;
 }
 
+.header-list ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.header-list ul li {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.header-list ul li:hover {
+  color: rgb(20, 223, 20);
+}
+
+nav .fa {
+  color: white;
+  font-size: 30px;
+  display: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
 .header-li {
   list-style: none;
   color: white;
